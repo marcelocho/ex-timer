@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.cronometro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19rem;
+    height: 100vh;
+    place-content: center;
+}
+
+.number {
+    display: flex;
+}
+
+.number span {
+    font-size: 12.6rem;
+    font-weight: 500;
+    letter-spacing: 0%;
+    color: #323238;
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 4rem
+}
+
+.control-button {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.control-button img{
+    width: 100%;
+    height: 100%;
+}
+
+.sound-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem
+}
+
+.hide {
+    display: none;
+}
+
+.sound-off {
+    padding: 4.8rem 4.3rem;
+    background-color: #E1E1E6;
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.sound-on {
+    padding: 4.8rem 4.3rem;
+    background-color: #02799D;
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+

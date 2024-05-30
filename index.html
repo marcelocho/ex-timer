@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script type="module" src="./src/main.js" defer></script>
+
+</head>
+<body>
+ <section class="cronometro">
+  <div class="timer">
+    <div class="number">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+    </div>
+    <div class="timer-buttons">
+        <button 
+        data-pressionar="comecar"
+        class="control-button">
+            <img src="/img/play.svg" alt="play">
+        </button>
+        <button 
+        data-pressionar="comecar"
+        class="control-button">
+            <img src="/img/stop.svg" alt="stop">
+        </button>
+        <button 
+        data-tempo="aumentar"
+        class="control-button">
+            <img src="/img/+.svg" alt="plus">
+        </button>
+        <button 
+        data-tempo="diminuir"
+        class="control-button">
+            <img src="/img/-.svg" alt="minus">
+        </button>
+    </div>
+  </div>
+  <div class="sound-buttons">
+    <button class="sound-off"><img src="/img/arvore-preto.svg" alt=""></button>
+    <button class="sound-on hide"><img src="/img/arvore-branco.svg" alt=""></button>
+    <button class="sound-off"><img src="/img/chuva-preto.svg" alt=""></button>
+    <button class="sound-on hide"><img src="/img/chuva-branco.svg" alt=""></button>
+    <button class="sound-off"><img src="/img/casa-preto.svg" alt=""></button>
+    <button class="sound-on hide"><img src="/img/casa-branco.svg" alt=""></button>
+    <button class="sound-off"><img src="/img/fogo-preto.svg" alt=""></button>
+    <button class="sound-on hide"><img src="/img/fogo-branco.svg" alt=""></button>
+  </div>
+ </section>
+
+ <script src="/src/main.js"></script>
+</body>
+</html>
