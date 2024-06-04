@@ -1,83 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 .cronometro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 19rem;
-    height: 100vh;
-    place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19rem;
+  height: 100vh;
+  place-content: center;
 }
 
 .number {
-    display: flex;
+  display: flex;
 }
 
 .number span {
-    font-size: 12.6rem;
-    font-weight: 500;
-    letter-spacing: 0%;
-    color: #323238;
+  font-size: 12.6rem;
+  font-weight: 500;
+  letter-spacing: 0%;
+  color: #323238;
 }
 
 .timer-buttons {
-    display: flex;
-    gap: 4rem
+  display: flex;
+  gap: 4rem;
 }
 
 .control-button {
-    width: 4.8rem;
-    height: 4.8rem;
-    background: white;
-    border: none;
-    cursor: pointer;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: white;
+  border: none;
+  cursor: pointer;
 }
 
-.control-button img{
-    width: 100%;
-    height: 100%;
-    z-index: -13;
+.control-button img {
+  width: 100%;
+  height: 100%;
+  z-index: -13;
 }
 
 .sound-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3.2rem
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
 }
 
 .hide {
-    display: none;
-}
-
-.sound-off {
-    padding: 4.8rem 4.3rem;
-    background-color: #E1E1E6;
-    border-radius: 2.4rem;
-    border: none;
-    cursor: pointer;
+  display: none;
 }
 
 .sound-on {
-    padding: 4.8rem 4.3rem;
-    background-color: #02799D;
-    border-radius: 2.4rem;
-    border: none;
-    cursor: pointer;
+  padding: 4.8rem 4.3rem;
+  background-color: #e1e1e6;
+  border-radius: 2.4rem;
+  border: none;
+  cursor: pointer;
 }
 
-.fogueira.fogueira-on {
-    display: none;
+.sound-off {
+  padding: 4.8rem 4.3rem;
+  background-color: #02799d;
+  border-radius: 2.4rem;
+  border: none;
+  cursor: pointer;
 }
 
-.fogueira.fogueira-off {
-    display: none;
+.fogueira.fogueira-on,
+.cafe.cafe-on,
+.chuva.chuva-on,
+.floresta.floresta-on {
+  display: none;
 }
