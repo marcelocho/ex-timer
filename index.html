@@ -12,48 +12,92 @@
 
 </head>
 <body>
- <section class="cronometro">
+ <section class="cronometro" id="controls">
   <div class="timer">
     <div class="number">
         <span id="minutes">25</span>
         <span>:</span>
         <span id="seconds">00</span>
     </div>
-    <div class="timer-buttons">
+    <div class="timer-buttons" >
         <button 
-        data-pressionar="comecar"
         class="control-button">
-            <img src="/img/play.svg" alt="play">
+            <img 
+            data-pressionar="comecar"
+            src="/img/play.svg" 
+            alt="play">
         </button>
-        <button 
-        data-pressionar="comecar"
-        class="control-button">
-            <img src="/img/stop.svg" alt="stop">
+        <button class="control-button">
+            <img 
+            data-pressionar="parar"
+            src="/img/stop.svg" 
+            alt="stop">
         </button>
-        <button 
-        data-tempo="aumentar"
-        class="control-button">
-            <img src="/img/+.svg" alt="plus">
+        <button class="control-button">
+            <img 
+            data-pressionar="aumentar"
+            src="/img/+.svg" 
+            alt="plus">
         </button>
-        <button 
-        data-tempo="diminuir"
-        class="control-button">
-            <img src="/img/-.svg" alt="minus">
+        <button class="control-button">
+            <img 
+            data-pressionar="diminuir"
+            src="/img/-.svg" 
+            alt="minus">
         </button>
     </div>
   </div>
   <div class="sound-buttons">
-    <button class="sound-off"><img src="/img/arvore-preto.svg" alt=""></button>
-    <button class="sound-on hide"><img src="/img/arvore-branco.svg" alt=""></button>
-    <button class="sound-off"><img src="/img/chuva-preto.svg" alt=""></button>
-    <button class="sound-on hide"><img src="/img/chuva-branco.svg" alt=""></button>
-    <button class="sound-off"><img src="/img/casa-preto.svg" alt=""></button>
-    <button class="sound-on hide"><img src="/img/casa-branco.svg" alt=""></button>
-    <button class="sound-off"><img src="/img/fogo-preto.svg" alt=""></button>
-    <button class="sound-on hide"><img src="/img/fogo-branco.svg" alt=""></button>
+    <button class="sound-off floresta">
+        <img 
+        data-pressionar="floresta"
+        src="/img/arvore-preto.svg" 
+        alt="">
+    </button>
+    <button class="sound-on">
+        <img 
+        data-pressionar="floresta floresta"
+        src="/img/arvore-branco.svg" 
+        alt="">
+    </button>
+    <button class="sound-off chuva">
+        <img 
+        data-pressionar="chuva"
+        src="/img/chuva-preto.svg" 
+        alt="">
+    </button>
+    <button class="sound-on chuva">
+        <img 
+        data-pressionar="chuva"
+        src="/img/chuva-branco.svg" 
+        alt="">
+    </button>
+    <button class="sound-off cafe">
+        <img 
+        data-pressionar="cafe"
+        src="/img/casa-preto.svg" 
+        alt="">
+    </button>
+    <button class="sound-on cafe">
+        <img 
+        data-pressionar="cafe"
+        src="/img/casa-branco.svg" 
+        alt="">
+    </button>
+    <button class="sound-off fogueira  ">
+        <img 
+        data-pressionar="fogueira"
+        src="/img/fogo-preto.svg" 
+        alt="">
+    </button>
+    <button class="sound-on fogueira fogueira-off">
+        <img 
+        data-pressionar="fogueira"
+        src="/img/fogo-branco.svg" 
+        alt="">
+    </button>
   </div>
  </section>
 
- <script src="/src/main.js"></script>
 </body>
 </html>

@@ -1,14 +1,13 @@
-import state from './state.js'
-import * as events from './events.js'
-import * as timer from './timer.js'
+import estado from "./state.js";
+import * as eventos from "./events.js";
+// import * as timer from './timer.js'
 
-export function start(minutes, seconds){
-    state.minutes = minutes
-    state.seconds = seconds
+export function start(minutes, seconds) {
+  estado.minutes = minutes;
+  estado.seconds = seconds;
 
-    timer.updateDisplay()
+  //     timer.updateDisplay()
 
-    events.registerControls()
-    events.setMinutes()
-
+  eventos.registerControls();
+  //     eventos.setMinutes()
 }
